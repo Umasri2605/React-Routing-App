@@ -1,0 +1,143 @@
+[
+    {
+      "name": "Aarav Mehta",
+      "age": 14,
+      "gender": "Male",
+      "fatherName": "Rajesh Mehta",
+      "motherName": "Sunita Mehta"
+    },
+    {
+      "name": "Anaya Sharma",
+      "age": 13,
+      "gender": "Female",
+      "fatherName": "Amit Sharma",
+      "motherName": "Pooja Sharma"
+    },
+    {
+      "name": "Vivaan Verma",
+      "age": 15,
+      "gender": "Male",
+      "fatherName": "Nitin Verma",
+      "motherName": "Kavita Verma"
+    },
+    {
+      "name": "Diya Singh",
+      "age": 14,
+      "gender": "Female",
+      "fatherName": "Ravi Singh",
+      "motherName": "Priya Singh"
+    },
+    {
+      "name": "Kabir Kumar",
+      "age": 13,
+      "gender": "Male",
+      "fatherName": "Sandeep Kumar",
+      "motherName": "Anjali Kumar"
+    },
+    {
+      "name": "Ishita Nair",
+      "age": 15,
+      "gender": "Female",
+      "fatherName": "Ajay Nair",
+      "motherName": "Deepa Nair"
+    },
+    {
+      "name": "Ayaan Khan",
+      "age": 14,
+      "gender": "Male",
+      "fatherName": "Imran Khan",
+      "motherName": "Sameera Khan"
+    },
+    {
+      "name": "Myra Reddy",
+      "age": 13,
+      "gender": "Female",
+      "fatherName": "Mahesh Reddy",
+      "motherName": "Lavanya Reddy"
+    },
+    {
+      "name": "Rohan Das",
+      "age": 14,
+      "gender": "Male",
+      "fatherName": "Sudhir Das",
+      "motherName": "Nandita Das"
+    },
+    {
+      "name": "Saanvi Patel",
+      "age": 13,
+      "gender": "Female",
+      "fatherName": "Rakesh Patel",
+      "motherName": "Meena Patel"
+    },
+    {
+      "name": "Aditya Joshi",
+      "age": 15,
+      "gender": "Male",
+      "fatherName": "Vijay Joshi",
+      "motherName": "Sarita Joshi"
+    },
+    {
+      "name": "Tanya Roy",
+      "age": 14,
+      "gender": "Female",
+      "fatherName": "Sourav Roy",
+      "motherName": "Rina Roy"
+    },
+    {
+      "name": "Krishna Yadav",
+      "age": 13,
+      "gender": "Male",
+      "fatherName": "Manoj Yadav",
+      "motherName": "Rekha Yadav"
+    },
+    {
+      "name": "Nisha Bhat",
+      "age": 15,
+      "gender": "Female",
+      "fatherName": "Ramesh Bhat",
+      "motherName": "Leela Bhat"
+    },
+    {
+      "name": "Aryan Dutta",
+      "age": 14,
+      "gender": "Male",
+      "fatherName": "Pradeep Dutta",
+      "motherName": "Manisha Dutta"
+    },
+    {
+      "name": "Kiara Pillai",
+      "age": 13,
+      "gender": "Female",
+      "fatherName": "Suresh Pillai",
+      "motherName": "Jyoti Pillai"
+    },
+    {
+      "name": "Reyansh Desai",
+      "age": 15,
+      "gender": "Male",
+      "fatherName": "Harsh Desai",
+      "motherName": "Neeta Desai"
+    },
+    {
+      "name": "Avni Bhatt",
+      "age": 14,
+      "gender": "Female",
+      "fatherName": "Anil Bhatt",
+      "motherName": "Savita Bhatt"
+    },
+    {
+      "name": "Yash Chauhan",
+      "age": 13,
+      "gender": "Male",
+      "fatherName": "Kiran Chauhan",
+      "motherName": "Usha Chauhan"
+    },
+    {
+      "name": "Meera Iyer",
+      "age": 15,
+      "gender": "Female",
+      "fatherName": "Narayan Iyer",
+      "motherName": "Lakshmi Iyer"
+    }
+  ]
+  
