@@ -33,7 +33,7 @@ function App() {
           </li>
         </ul>
         <div className="border border-1 m-3 p-3 border-warning">
-        <Outlet></Outlet>
+          <Outlet></Outlet>
         </div>
       </div>
   );
