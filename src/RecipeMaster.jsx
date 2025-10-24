@@ -16,4 +16,4 @@ function RecipeMaster(){
         </div>
     )
 }
-export default RecipeMaster;
+export default RecipeMaster
