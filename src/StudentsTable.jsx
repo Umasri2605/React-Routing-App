@@ -38,7 +38,7 @@ function StudentsTable(){
         <button onClick={()=>{xyz()}}>Sort By FatherName</button> 
         <br></br>
          <br></br>            
-        <table  border="2">
+        <table  className='table table-striped'>
             <thead>
                 <tr>
                     <td><b>ThumNail</b></td>
