@@ -33,4 +33,4 @@ function RecipeDetails(){
       </div>
     );
 }
-export default RecipeDetails;
+export default RecipeDetails
