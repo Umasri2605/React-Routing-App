@@ -30,14 +30,14 @@ import React from "react"
     <form onSubmit={studentForm.handleSubmit}>
 
     <b>FirstName:</b>   
-    <input type="text" name="FirstName" onChange={studentForm.handleChange} onBlur={studentForm.handleBlur}/> 
+    <input type="text" {...studentForm.getFieldProps("FirstName")}/> 
     {/* <>{studentForm.touched. FirstName && studentForm.errors.FirstName &&(<div>FirstName is Mandatory</div>)}</>
     <>{studentForm.errors.FirstName && (<div>Must be 3 Characters</div>)}</> */}
     <br></br>
     <br></br>
     
     <b>LastName:</b>
-    <input type="text" name="LastName" onChange={studentForm.handleChange} />
+    <input type="text" {...studentForm.getFieldProps("LastName")}/>
     <>{studentForm.errors.LastName &&(<div>Max 5 Alhabets</div>)}</>
     <br></br>
     <br></br>
@@ -51,7 +51,7 @@ import React from "react"
     <br></br>
 
     <b>Age:</b>
-    <input type="text" name="Age" onChange={studentForm.handleChange} />
+    <input type="text" {...studentForm.getFieldProps("Age")} />
     <br></br>
     <br></br>
 
