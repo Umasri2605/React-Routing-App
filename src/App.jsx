@@ -1,42 +1,64 @@
-import React from "react"
-import Counter from "./Counter.jsx"
-import Student from "./StudentsTable.jsx"
-import TodoList from "./TodoList.jsx"
-import StudentForm from "./StudentForm.jsx"
-import RecipeMaster from "./RecipeMaster.jsx"
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
+
 function App() {
   return (
-    <div className=" border border-2 border-danger p-4 m-4">
-      <h1>Routing Components Here:</h1>
-        <ul className="d-flex list-unstyled justify-content-between text-dark">
-          <li>
-            <Link to="/counter" style={{color:"black",textDecoration:"none"}}> Counter</Link><br/>
-          </li>
-          <li>
-           <Link to="/todolist" style={{color:"black",textDecoration:"none"}}>TodoList</Link><br/>
-          </li>
-          <li>
-           <Link to="/table" style={{color:"black",textDecoration:"none"}}>StudentsTable</Link><br/>
-          </li>
-          <li>
-           <Link to="/studentform" style={{color:"black",textDecoration:"none"}}>StudentForm</Link><br/>
-          </li>
-          <li>
-           <Link to="./recipe" style={{color:"black",textDecoration:"none"}}>RecipeMaster</Link>  
-          </li>
-          <li>
-           <Link to="/studentform" style={{color:"black",textDecoration:"none"}}>StudentForm</Link><br/>
-          </li>
-          <li>  
-           <Link to="./recipe" style={{color:"black",textDecoration:"none"}}>RecipeMaster</Link>
-          </li>
+    <div
+      className="container my-5 p-4 rounded-4 shadow"
+      style={{
+        background: "linear-gradient(to right, #fdf6f0, #f7e8ff)", // soft pastel gradient
+        minHeight: "100vh",
+      }}
+    >
+      <header className="text-center mb-5">
+        <h1 className="fw-bold text-purple" style={{ color: "#6a0dad" }}>
+           React Routing Components
+        </h1>
+        
+      </header>
+
+      <nav className="mb-5">
+        <ul className="nav flex-column flex-md-row justify-content-center gap-3 list-unstyled">
+          {[
+            { path: "/counter", name: "Counter" },
+            { path: "/todolist", name: "TodoList" },
+            { path: "/table", name: "StudentsTable" },
+            { path: "/studentform", name: "StudentForm" },
+            { path: "/recipe", name: "RecipeMaster" },
+          ].map((item) => (
+            <li key={item.path} className="nav-item">
+              <Link
+                to={item.path}
+                className="nav-link text-center px-4 py-3 rounded-4 shadow-lg fw-semibold"
+                style={{
+                  background: "white",
+                  color: "#6a0dad",
+                  transition: "0.3s",
+                  minWidth: "130px",
+                }}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
-        <div className="border border-1 m-3 p-3 border-warning">
-          <Outlet></Outlet>
-        </div>
-      </div>
+      </nav>
+
+      <main
+        className="p-5 rounded-4 shadow"
+        style={{ backgroundColor: "rgba(255,255,255,0.9)" }}
+      >
+        <Outlet />
+      </main>
+
+      <footer
+        className="text-center mt-5 p-3 rounded-4"
+        style={{ background: "rgba(255,255,255,0.7)", color: "#6a0dad" }}
+      >
+        <small>© 2025 My Elegant React App | Styled with Bootstrap & Pastels</small>
+      </footer>
+    </div>
   );
 }
 
-export default App
+export default App;

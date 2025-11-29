@@ -1,54 +1,74 @@
 import React from "react";
-function TodoList(){
-    // state
-    var[todo,settodo]=React.useState(["Uma","Pravallika","Raji","Mounika","Ramya"]);
 
-    //action
-    function add(){
-    var newtodo=document.getElementById("ntd").value;
-    // settodo([...todo,newtodo])
-    settodo((currenttodo)=>{
-        return([...currenttodo,newtodo]);
-    })
-}
-    function del(index){
-    //  var temp=[...todo];
-    //  temp.splice(index,1)
-    // settodo([...temp]);
+function TodoList() {
+  // state
+  var [todo, settodo] = React.useState([
+    "Uma",
+    "Pravallika",
+    "Raji",
+    "Mounika",
+    "Ramya",
+  ]);
 
-    // settodo((currenttodo)=>{
-    //     currenttodo.splice(index,1);
-    //     return([...currenttodo])
-    // })
+  // action
+  function add() {
+    var newtodo = document.getElementById("ntd").value;
+    settodo((currenttodo) => {
+      return [...currenttodo, newtodo];
+    });
+  }
 
-    settodo((currenttodo)=>{
-      return currenttodo.filter((todo,i)=>{
-            if(index!==i){
-                return true;
-            }
-        })
-    })
-    }  
-    
-    //ui
-    return(
-        <div>
-            <h3>Todolist</h3>
-            <input type="text" id="ntd"/>
-            <button onClick={()=>add()}>Add Task</button>
-            <ul>
-                {
-                  todo.map((todos,i)=>{
-                    return<li>
-                        {todos}
-                        <button onClick={()=>{del(i)}}>Delete</button>
-                    </li>
-                  })
-                }
-                   
-                </ul>
-            
+  function del(index) {
+    settodo((currenttodo) => {
+      return currenttodo.filter((todo, i) => {
+        if (index !== i) {
+          return true;
+        }
+      });
+    });
+  }
+
+  // ui
+  return (
+    <div className="d-flex justify-content-center align-items-start p-5 bg-light min-vh-90">
+      <div className="card shadow-lg p-4" style={{ width: "400px" }}>
+        <h3 className="text-center mb-4 fw-bold text-primary">Todolist</h3>
+
+        <div className="d-flex mb-3">
+          <input
+            type="text"
+            id="ntd"
+            className="form-control me-2"
+            placeholder="Enter task"
+          />
+          <button className="btn btn-success" onClick={() => add()}>
+            Add Task
+          </button>
         </div>
-    )
+
+        <ul className="list-group">
+          {todo.map((todos, i) => {
+            return (
+              <li
+                key={i}
+                className="list-group-item d-flex justify-content-between align-items-center"
+              >
+                {todos}
+                <button
+                  className="btn btn-sm btn-danger"
+                  onClick={() => {
+                    del(i);
+                  }}
+                >
+                  Delete
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
 }
-export default TodoList
+
+export default TodoList;

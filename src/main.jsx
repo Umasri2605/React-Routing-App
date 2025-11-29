@@ -9,11 +9,11 @@ import {
     RouterProvider,
   } from "react-router-dom";
 import TodoList from './TodoList.jsx';
-import StudentForm from './StudentForm.jsx';
 import StudentsTable from './StudentsTable.jsx';
 import Counter from './Counter.jsx';
 import RecipeMaster from './RecipeMaster.jsx';
 import RecipeDetails from './recipeDetails.jsx';
+import StudentsForm from './StudentForm.jsx';
   
 const router = createBrowserRouter([
     {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     },
     {
       path:"studentform",
-      element:<StudentForm></StudentForm>
+      element:<StudentsForm></StudentsForm>
     },
     { 
        path:"recipe",
