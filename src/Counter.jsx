@@ -22,7 +22,7 @@ function Counter() {
 
   // ui 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-80 bg-light">
+    <div className="d-flex justify-content-center align-items-center vh-90 bg-light">
       <div className="card shadow-lg p-4 text-center" style={{ width: "350px" }}>
         <h3 className="mb-4 fw-bold text-primary">Counter: {c}</h3>
 
