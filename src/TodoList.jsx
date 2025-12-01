@@ -9,8 +9,7 @@ function TodoList() {
     "Mounika",
     "Ramya",
   ]);
-
-  // action
+ // action
   function add() {
     var newtodo = document.getElementById("ntd").value;
     settodo((currenttodo) => {

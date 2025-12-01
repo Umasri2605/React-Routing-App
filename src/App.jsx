@@ -6,7 +6,7 @@ function App() {
     <div
       className="container my-5 p-4 rounded-4 shadow"
       style={{
-        background: "linear-gradient(to right, #fdf6f0, #f7e8ff)", // soft pastel gradient
+        background: "linear-gradient(to right, #fdf6f0, #f7e8ff)", 
         minHeight: "100vh",
       }}
     >
